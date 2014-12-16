@@ -1,6 +1,7 @@
 class Hq::PartnersController < HqController
   def index
-    @partners= Partner.all
+    #@partners = Partner.all.paginate(:page => params[:page], :per_page => 5)
+    @partners = Partner.paginate(:page => params[:page], :per_page => (params[:per_page] || 5) )
   end
 
   def new
