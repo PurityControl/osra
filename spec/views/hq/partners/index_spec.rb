@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'will_paginate/array'
 
 
 RSpec.describe "hq/partners/index.html.erb", type: :view do
