@@ -51,8 +51,7 @@
       </tbody>
     </table>
   <div class="pagination">
-    <%= will_paginate @partners, renderer: BootstrapPagination::Rails %>
+    <%= will_paginate @partners %>
+    <%= page_entries_info @partners %>
   </div>
-  <%= will_paginate @partners %>
-  <%= page_entries_info @partners %>
 <%- end %>
